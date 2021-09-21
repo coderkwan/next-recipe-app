@@ -1,0 +1,26 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 3rem;
+  text-align: left;
+}
+.smalltitle {
+  margin: 0;
+  max-width: 900px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.description {
+  text-align: left;
+  max-width: 660px;
+  font-size: 1.2rem;
+}

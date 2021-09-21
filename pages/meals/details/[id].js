@@ -1,13 +1,15 @@
 import React from "react";
-import Image from "next/dist/client/image";
-import style from "../../../styles/Home.module.css";
+import Image from "next/image";
+import style from "../../../styles/Details.module.css";
 import Link from "next/link";
 
 function Details({ result }) {
   const final = result.meals[0];
   return (
     <div className={style.container}>
-      <p className={style.description}>{final.strMeal}</p>
+      <Image src={final.strMealThumb} height={300} width={300} alt="food" />
+      <p className={style.title}>{final.strMeal}</p>
+      <p className={style.description}>{final.strInstructions}</p>
     </div>
   );
 }
