@@ -2,7 +2,6 @@ import React from "react";
 import style from "../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import pp from "../public/me2.jpg";
 import gsap from "gsap";
 
 export default function Kwanele({ sayings }) {
@@ -22,7 +21,7 @@ export default function Kwanele({ sayings }) {
           {thelist.map((item, key) => {
             return (
               <div key={key} className={style.card}>
-                <Link href={`/posts/${item.strCategory}`}>
+                <Link href={`/meals/${item.strCategory}`}>
                   <div>
                     <Image
                       src={item.strCategoryThumb}
