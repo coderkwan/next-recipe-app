@@ -12,15 +12,17 @@ function Mypost({ result }) {
         {themeal.map((item, key) => {
           return (
             <div key={key} className={mstyle.card}>
-              <div>
-                <Image
-                  src={item.strMealThumb}
-                  height={320}
-                  width={320}
-                  alt="thumbnail"
-                />
-                <p className={mstyle.description}>{item.strMeal}</p>
-              </div>
+              <Link href={`/meals/details/${item.strMeal}`}>
+                <div>
+                  <Image
+                    src={item.strMealThumb}
+                    height={320}
+                    width={320}
+                    alt="thumbnail"
+                  />
+                  <p className={mstyle.description}>{item.strMeal}</p>
+                </div>
+              </Link>
             </div>
           );
         })}
