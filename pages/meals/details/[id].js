@@ -133,7 +133,7 @@ function Details({ result }) {
         <div>
           <p className={style.smalltitle}>Instructions</p>
           {myInstru.map((item, key) => {
-            if (item.length > 4) {
+            if (item.length > 5) {
               return (
                 <p key={key} className={style.des}>
                   <li className={style.des}>{item}</li>
