@@ -21,7 +21,7 @@ export default function Kwanele({ sayings }) {
               return (
                 <div key={key} className={style.card}>
                   <Link href={`/meals/${item.strCategory}`}>
-                    <div>
+                    <span>
                       <Image
                         src={item.strCategoryThumb}
                         height={200}
@@ -29,7 +29,7 @@ export default function Kwanele({ sayings }) {
                         alt="thumbnail"
                       />
                       <a className={style.smalltitle}>{item.strCategory}</a>
-                    </div>
+                    </span>
                   </Link>
                 </div>
               );

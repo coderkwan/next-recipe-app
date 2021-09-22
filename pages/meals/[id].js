@@ -3,14 +3,17 @@ import Image from "next/dist/client/image";
 import mstyle from "../../styles/Home.module.css";
 import Link from "next/link";
 import Navbar from "../../components/Nabar";
+import { useRouter } from "next/router";
 
 function Mypost({ result }) {
   const themeal = result.meals;
+  const route = useRouter();
+  const { id } = route.query;
   return (
     <div>
       <Navbar />
       <div className={mstyle.container}>
-        <h2 className={mstyle.title}></h2>
+        <h2 className={mstyle.title}>{id} Recipes</h2>
         <div className={mstyle.grid}>
           {themeal.map((item, key) => {
             return (

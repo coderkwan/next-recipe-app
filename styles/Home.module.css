@@ -123,10 +123,20 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 685px) {
   .grid {
     width: 100%;
     flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .smalltitle {
+    font-size: 1.4rem;
   }
 }
 

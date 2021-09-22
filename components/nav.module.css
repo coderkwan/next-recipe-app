@@ -16,7 +16,7 @@
 }
 
 .home:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 .home:active {
   color: rgb(27, 158, 105);
