@@ -124,6 +124,9 @@
 }
 
 @media (max-width: 685px) {
+  .title {
+    padding: 0 2rem;
+  }
   .grid {
     width: 100%;
     flex-direction: column;
@@ -131,6 +134,7 @@
   }
   .card {
     width: 90%;
+    margin: 1rem 0;
   }
   .title {
     font-size: 2rem;
