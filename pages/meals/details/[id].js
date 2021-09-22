@@ -6,10 +6,14 @@ import Navbar from "../../../components/Nabar";
 import mstyle from "../../../styles/Home.module.css";
 import gsap from "gsap";
 import { useRef, useEffect } from "react";
+
 function Details({ result }) {
   const final = result.meals[0];
   const cont = useRef();
-
+  function split(sentence) {
+    return sentence.split(".");
+  }
+  const myInstru = split(final.strInstructions);
   useEffect(() => {
     gsap.to(cont.current, 1, {
       opacity: 1,
@@ -128,7 +132,15 @@ function Details({ result }) {
         </div>
         <div>
           <p className={style.smalltitle}>Instructions</p>
-          <p className={style.description}>{final.strInstructions}</p>
+          {myInstru.map((item, key) => {
+            if (item.length > 2) {
+              return (
+                <p key={key} className={style.des}>
+                  <li className={style.des}>{item}</li>
+                </p>
+              );
+            }
+          })}
         </div>
         <Link href="/">
           <a className={mstyle.linker}>Home</a>
