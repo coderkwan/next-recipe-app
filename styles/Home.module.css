@@ -49,13 +49,15 @@
 .title a:active {
   text-decoration: underline;
 }
-
+.title span {
+  text-decoration: underline;
+}
 .title {
   margin: 0;
   max-width: 700px;
   font-size: 3rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   color: #37b937;
 }
 .smalltitle {
@@ -126,7 +128,7 @@
 
 @media (max-width: 685px) {
   .title {
-    padding: 0 2rem;
+    padding: 0 1.7rem;
   }
   .grid {
     width: 100%;

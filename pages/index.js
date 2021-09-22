@@ -20,8 +20,8 @@ export default function Kwanele({ sayings }) {
       <Navbar />
       <div ref={cont} className={style.container}>
         <h1 className={style.title}>
-          I like food. I like eating. And I dont want to deprive myself of good
-          food.
+          I like food. I like <span>eating.</span> And I dont want to deprive
+          myself of <span>good food.</span>
         </h1>
         <p className={style.description}>The home of all recipes.</p>
         <div ref={cont2} className={style.container}>
