@@ -4,15 +4,24 @@ import mstyle from "../../styles/Home.module.css";
 import Link from "next/link";
 import Navbar from "../../components/Nabar";
 import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 function Mypost({ result }) {
   const themeal = result.meals;
   const route = useRouter();
   const { id } = route.query;
+  const cont = useRef();
+  useEffect(() => {
+    gsap.to(cont.current, 1, {
+      opacity: 1,
+      ease: "circ",
+    });
+  }, [cont]);
   return (
     <div>
       <Navbar />
-      <div className={mstyle.container}>
+      <div ref={cont} className={mstyle.container}>
         <h2 className={mstyle.title}>{id} Recipes</h2>
         <div className={mstyle.grid}>
           {themeal.map((item, key) => {

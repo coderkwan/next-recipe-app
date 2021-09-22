@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import style from "../styles/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/Nabar";
+import gsap from "gsap";
 
 export default function Kwanele({ sayings }) {
   const thelist = sayings.categories;
+  const cont = useRef();
+  const cont2 = useRef();
+  useEffect(() => {
+    gsap.to([cont.current, cont2.current], 1, {
+      opacity: 1,
+      ease: "circ",
+    });
+  }, [cont, cont2]);
   return (
     <div>
       <Navbar />
-      <div className={style.container}>
+      <div ref={cont} className={style.container}>
         <h1 className={style.title}>
           I like food. I like eating. And I dont want to deprive myself of good
           food.
         </h1>
         <p className={style.description}>The home of all recipes.</p>
-        <div className={style.container}>
+        <div ref={cont2} className={style.container}>
           <div className={style.grid}>
             {thelist.map((item, key) => {
               return (
