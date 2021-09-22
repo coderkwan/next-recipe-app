@@ -2,34 +2,38 @@ import React from "react";
 import Image from "next/dist/client/image";
 import mstyle from "../../styles/Home.module.css";
 import Link from "next/link";
+import Navbar from "../../components/Nabar";
 
 function Mypost({ result }) {
   const themeal = result.meals;
   return (
-    <div className={mstyle.container}>
-      <h2 className={mstyle.title}></h2>
-      <div className={mstyle.grid}>
-        {themeal.map((item, key) => {
-          return (
-            <div key={key} className={mstyle.card}>
-              <Link href={`/meals/details/${item.strMeal}`}>
-                <div>
-                  <Image
-                    src={item.strMealThumb}
-                    height={320}
-                    width={320}
-                    alt="thumbnail"
-                  />
-                  <p className={mstyle.description}>{item.strMeal}</p>
-                </div>
-              </Link>
-            </div>
-          );
-        })}
+    <div>
+      <Navbar />
+      <div className={mstyle.container}>
+        <h2 className={mstyle.title}></h2>
+        <div className={mstyle.grid}>
+          {themeal.map((item, key) => {
+            return (
+              <div key={key} className={mstyle.card}>
+                <Link href={`/meals/details/${item.strMeal}`}>
+                  <div>
+                    <Image
+                      src={item.strMealThumb}
+                      height={320}
+                      width={320}
+                      alt="thumbnail"
+                    />
+                    <p className={mstyle.description}>{item.strMeal}</p>
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+        <Link href="/">
+          <a className={mstyle.linker}>Home</a>
+        </Link>
       </div>
-      <Link href="/">
-        <a className={mstyle.title}>Home</a>
-      </Link>
     </div>
   );
 }

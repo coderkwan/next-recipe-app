@@ -8,10 +8,13 @@
 }
 
 .title {
-  margin: 20px;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: left;
+  margin: 0;
+  max-width: 700px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 22px;
+  font-weight: 500;
+  color: #37b937;
 }
 .smalltitle {
   margin: 0;

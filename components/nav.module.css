@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  z-index: 22;
+  margin-bottom: 90px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(96, 172, 46);
+  box-shadow: 0 1px 22px 3px rgba(128, 128, 128, 0.137);
+}
+.home {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home:hover {
+  transform: translateY(-10px);
+}
+.home:active {
+  color: rgb(27, 158, 105);
+}
