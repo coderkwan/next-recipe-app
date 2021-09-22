@@ -39,7 +39,7 @@ function Nabar() {
             {cate.map((item, key) => {
               return (
                 <Link key={key} href={`/meals/${item}`}>
-                  <li>{item}</li>
+                  <li onClick={toggle}>{item}</li>
                 </Link>
               );
             })}
