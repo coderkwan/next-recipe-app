@@ -24,93 +24,93 @@ function Details({ result }) {
           <p className={style.smalltitle}>Ingrediants</p>
           <table className={style.table}>
             <thead>
-              <tr key="">
+              <tr key="d2f">
                 <th>Ingrediants</th>
                 <th>Measure</th>
               </tr>
             </thead>
             <tbody>
-              <tr key="">
+              <tr key="ffv">
                 <td>{final.strIngredient1}</td>
                 <td>{final.strMeasure1}</td>
               </tr>
-              <tr key="">
+              <tr key="bnthr">
                 <td>{final.strIngredient2}</td>
                 <td>{final.strMeasure2}</td>
               </tr>
-              <tr key="">
+              <tr key="regeg">
                 <td>{final.strIngredient3}</td>
                 <td>{final.strMeasure3}</td>
               </tr>
-              <tr key="">
+              <tr key="k67k6">
                 <td>{final.strIngredient4}</td>
                 <td>{final.strMeasure4}</td>
               </tr>
-              <tr key="">
+              <tr key="wyjyh">
                 <td>{final.strIngredient5}</td>
                 <td>{final.strMeasure5}</td>
               </tr>
-              <tr key="">
+              <tr key="my5ja">
                 <td>{final.strIngredient6}</td>
                 <td>{final.strMeasure6}</td>
               </tr>
-              <tr key="">
+              <tr key="hhtr">
                 <td>{final.strIngredient7}</td>
                 <td>{final.strMeasure7}</td>
               </tr>
-              <tr key="">
+              <tr key="tttjt">
                 <td>{final.strIngredient8}</td>
                 <td>{final.strMeasure8}</td>
               </tr>
-              <tr key="">
+              <tr key="e4yy">
                 <td>{final.strIngredient9}</td>
                 <td>{final.strMeasure9}</td>
               </tr>
-              <tr key="">
+              <tr key="tjtg">
                 <td>{final.strIngredient10}</td>
                 <td>{final.strMeasure10}</td>
               </tr>
-              <tr key="">
+              <tr key="jjyyrt">
                 <td>{final.strIngredient11}</td>
                 <td>{final.strMeasure11}</td>
               </tr>
-              <tr key="">
+              <tr key="dde5y">
                 <td>{final.strIngredient12}</td>
                 <td>{final.strMeasure12}</td>
               </tr>
-              <tr key="">
+              <tr key="jyjww">
                 <td>{final.strIngredient13}</td>
                 <td>{final.strMeasure13}</td>
               </tr>
-              <tr key="">
+              <tr key="556t">
                 <td>{final.strIngredient14}</td>
                 <td>{final.strMeasure14}</td>
               </tr>
-              <tr key="">
+              <tr key="556g">
                 <td>{final.strIngredient15}</td>
                 <td>{final.strMeasure15}</td>
               </tr>
-              <tr key="">
+              <tr key="gg22w">
                 <td>{final.strIngredient16}</td>
                 <td>{final.strMeasure16}</td>
               </tr>
-              <tr key="">
+              <tr key="ttt65">
                 <td>{final.strIngredient17}</td>
                 <td>{final.strMeasure17}</td>
               </tr>
-              <tr key="">
+              <tr key="44uujj">
                 <td>{final.strIngredient18}</td>
                 <td>{final.strMeasure18}</td>
               </tr>
-              <tr key="">
+              <tr key="8ikr">
                 <td>{final.strIngredient19}</td>
                 <td>{final.strMeasure19}</td>
               </tr>
-              <tr key="">
+              <tr key="rr521">
                 <td>{final.strIngredient20}</td>
                 <td>{final.strMeasure20}</td>
               </tr>
-              <tr key="">
+              <tr key="6rge">
                 <td>{final.strIngredient21}</td>
                 <td>{final.strMeasure21}</td>
               </tr>
