@@ -21,3 +21,30 @@
 .home:active {
   color: rgb(27, 158, 105);
 }
+.navContainer {
+  position: relative;
+}
+.list {
+  position: absolute;
+  background-color: rgb(212, 236, 212);
+  color: rgb(17, 68, 20);
+  padding: 0;
+  right: -60px;
+  max-height: 77vh;
+  overflow-y: scroll;
+  top: 45px;
+}
+
+.list li {
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 10px 53px;
+  border-bottom: 1px solid grey;
+  transition: all 0.4s ease;
+}
+
+.list li:hover {
+  color: black;
+  transform: translateY(-10px);
+}
