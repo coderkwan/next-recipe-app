@@ -11,7 +11,7 @@ export default function Kwanele({ sayings }) {
       <Navbar />
       <div className={style.container}>
         <h1 className={style.title}>
-          I like food. I like eating. And I don't want to deprive myself of good
+          I like food. I like eating. And I dont want to deprive myself of good
           food.
         </h1>
         <p className={style.description}>The home of all recipes.</p>
