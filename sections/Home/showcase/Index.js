@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/dist/client/image";
 import styles from "../../../styles/Home.module.css";
+import foodImg from "../../../public/imgbin.png";
 
 function Showcase() {
   return (
@@ -30,7 +31,26 @@ function Showcase() {
             <Image
               height={384}
               width={384}
-              src="/imgbin.png"
+              placeholder="blur"
+              src={foodImg}
+              alt="display meal"
+            />
+          </div>
+          <div className={styles.mediumMeal}>
+            <Image
+              height={384}
+              width={384}
+              placeholder="blur"
+              src={foodImg}
+              alt="display meal"
+            />
+          </div>
+          <div className={styles.smallMeal}>
+            <Image
+              height={384}
+              width={384}
+              placeholder="blur"
+              src={foodImg}
               alt="display meal"
             />
           </div>

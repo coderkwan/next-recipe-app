@@ -22,6 +22,31 @@
   width: 65%;
 }
 
+.mealWrapper {
+  position: relative;
+}
+.smallMeal {
+  background-image: url("/circlered.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 120px;
+  right: -50px;
+  bottom: -80px;
+  opacity: 0.3;
+}
+.mediumMeal {
+  background-image: url("/circlered.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;
+  bottom: -40px;
+  left: -160px;
+  position: absolute;
+  opacity: 0.3;
+}
 .bigMeal {
   display: flex;
   justify-content: center;
@@ -77,5 +102,13 @@
   }
   .h1 {
     font-size: 3.1rem;
+  }
+}
+@media screen and (min-width: 1229px) {
+  .mediumMeal {
+    opacity: 1;
+  }
+  .smallMeal {
+    opacity: 1;
   }
 }
