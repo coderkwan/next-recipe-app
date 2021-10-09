@@ -11,7 +11,7 @@
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  background-color: #ffffff;
+  background-color: #e4fdcd;
   width: 90vw;
   max-width: 700px;
   border-radius: 18px;
@@ -40,7 +40,7 @@
 }
 .link {
   padding: 20px 0;
-  font-size: 20px;
+  font-size: 19px;
   border-bottom: 1px solid rgba(68, 68, 68, 0.719);
   width: 100%;
   color: #35412f;
