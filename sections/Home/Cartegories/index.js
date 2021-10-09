@@ -1,29 +1,14 @@
-import React from "react";
-import Image from "next/dist/client/image";
-import Link from "next/dist/client/link";
-import style from "../../../styles/Home.module.css";
+import CartegoryCard from "../../../components/CartegoryCard";
+import styles from "../../../styles/forComponents/categoryCard.module.css";
 
 function Categories({ categories }) {
   const thelist = categories.categories;
   return (
-    <div>
-      <div className={style.grid}>
+    <div className={styles.mainContainer}>
+      <h2 className={styles.header}>Here is A list of All Categories</h2>
+      <div className={styles.container}>
         {thelist.map((item, key) => {
-          return (
-            <div key={key} className={style.card}>
-              <Link href={`/meals/${item.strCategory}`}>
-                <span>
-                  <Image
-                    src={item.strCategoryThumb}
-                    height={200}
-                    width={320}
-                    alt="thumbnail"
-                  />
-                  <a className={style.smalltitle}>{item.strCategory}</a>
-                </span>
-              </Link>
-            </div>
-          );
+          return <CartegoryCard Cartegory={item} key={key} />;
         })}
       </div>
     </div>

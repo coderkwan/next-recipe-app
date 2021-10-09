@@ -19,7 +19,7 @@ export default function MainComponent({ cateList, random, random2, random3 }) {
       {/* <Navbar /> */}
       <Showcase />
       <RandomMeal random={mylist} />
-      {/* <Categories categories={cateList} /> */}
+      <Categories categories={cateList} />
     </div>
   );
 }
