@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import style from "../../../styles/Details.module.css";
 import Link from "next/link";

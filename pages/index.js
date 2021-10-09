@@ -2,6 +2,7 @@ import Navbar from "../components/Nabar";
 import Showcase from "../sections/Home/showcase/Index";
 import RandomMeal from "../sections/Home/randomMeals";
 import Categories from "../sections/Home/Cartegories";
+import PrimaryBtn from "../components/PrimaryBtn";
 
 export default function MainComponent({ cateList, random, random2, random3 }) {
   const thelist = cateList.categories;
@@ -23,7 +24,7 @@ export default function MainComponent({ cateList, random, random2, random3 }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const data = await fetch(
     "https://www.themealdb.com/api/json/v1/1/categories.php"
   );

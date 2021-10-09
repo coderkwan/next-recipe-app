@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 360px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 30px 0;
+  border: 1px solid #444;
+  padding: 20px 16px;
+  /* background-image: url("/joseph.jpg"); */
+  background-color: #444;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.h5 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.wrapper {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainContainer {
+  text-align: left;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 270px;
+    margin: 30px;
+  }
+  .mainContainer {
+    text-align: center;
+  }
+}

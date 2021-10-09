@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
 import RandomMealCard from "../../../components/RandomMealCard";
+import styles from "../../../styles/forComponents/randomCard.module.css";
 
 function RandomMeal({ random }) {
   return (
-    <div>
-      <h1>I am the Random Meal</h1>
-      {random.map((item, key) => {
-        return <h5 key={key}>{item.strMeal}</h5>;
-      })}
+    <div className={styles.mainContainer}>
+      <h2>Today’s 3 Random Meals</h2>
+      <div className={styles.wrapper}>
+        {random.map((item, key) => {
+          return <RandomMealCard Meal={item} key={key} />;
+        })}
+      </div>
     </div>
   );
 }

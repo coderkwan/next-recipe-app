@@ -31,3 +31,9 @@ ul {
 p {
   font-family: "Roboto", sans-serif;
 }
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #222;
+}
