@@ -19,17 +19,21 @@
 }
 .p {
   font-weight: 300;
-  width: 75%;
+  width: 65%;
 }
 
 .bigMeal {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #edae01;
-  width: 80%;
-  height: 80%;
+  background-image: url("/circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
+
 .input {
   font-size: 19px;
   padding: 10px 15px;
@@ -42,9 +46,26 @@
   background: transparent;
 }
 
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  left: -40px;
+  top: 14px;
+  cursor: pointer;
+}
+.input::placeholder {
+  font-size: 17px;
+}
+
 @media screen and (min-width: 750px) {
   .container {
     flex-direction: row;
+    align-items: center;
   }
   .leftContainer {
     order: 1;

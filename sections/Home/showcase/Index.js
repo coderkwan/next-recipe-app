@@ -13,14 +13,23 @@ function Showcase() {
           Welcome to the beautiful collectionof world wide recipes. We value
           your meals
         </p>
-        <input className={styles.input} type="text" />
+        <div className={styles.searchContainer}>
+          <input
+            className={styles.input}
+            placeholder="Discover our nice Recipes"
+            type="text"
+          />
+          <div className={styles.icon}>
+            <Image height={25} width={25} src="/icon.png" alt="search" />
+          </div>
+        </div>
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.mealWrapper}>
           <div className={styles.bigMeal}>
             <Image
-              height={284}
-              width={284}
+              height={384}
+              width={384}
               src="/imgbin.png"
               alt="display meal"
             />
