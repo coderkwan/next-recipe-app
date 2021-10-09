@@ -1,9 +1,12 @@
 import styles from "../styles/forComponents/button.module.css";
+import Link from "next/dist/client/link";
 
-function PrimaryBtn({ text }) {
+function PrimaryBtn({ text, link }) {
   return (
     <>
-      <button className={styles.btn}>{text}</button>
+      <Link href={`/meals/${link}`}>
+        <a className={styles.btn}>{text}</a>
+      </Link>
     </>
   );
 }
