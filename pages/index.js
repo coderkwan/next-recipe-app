@@ -1,3 +1,4 @@
+import { useState, useRef } from "react";
 import Showcase from "../sections/Home/showcase/Index";
 import RandomMeal from "../sections/Home/randomMeals";
 import Categories from "../sections/Home/Cartegories";
@@ -15,10 +16,27 @@ export default function MainComponent({
   mylist.push(random2.meals[0]);
   mylist.push(random3.meals[0]);
   mylist.shift();
+
+  const [click, setClick] = useState(false);
+  const app = useRef();
+
+  let display = "none";
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setClick(true);
+  };
+  const closeList = (e) => {
+    e.preventDefault();
+    setClick(false);
+  };
+
+  click ? (display = "flex") : (display = "none");
+
   return (
     <div>
-      <Showcase />
-      <SearchArea list={list} />
+      <Showcase clicked={handleClick} />
+      <SearchArea closeList={closeList} display={display} list={list} />
       <RandomMeal mylist={mylist} />
       <Categories cateList={cateList} />
     </div>

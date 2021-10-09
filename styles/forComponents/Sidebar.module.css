@@ -1,40 +1,73 @@
 .container {
-  display: none;
   flex-direction: column;
-  text-align: right;
-  align-items: flex-end;
-  max-height: 100vh;
+  justify-content: space-between;
+  max-height: 400px;
   position: fixed;
-  overflow-y: scroll;
   top: 0;
-  background-color: #ffffff;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   left: 0;
-  padding: 0 20px;
-  z-index: 442;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 700px;
+  border-radius: 18px;
+  padding: 40px 30px;
+  z-index: 33;
+  box-shadow: 0 0 83px 8px rgba(121, 121, 121, 0.397);
+  transition: all 0.8s ease-in;
 }
-.container::-webkit-scrollbar {
-  width: 7px;
+
+.close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.closeIcon {
+  cursor: pointer;
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-end;
+  overflow-y: scroll;
+  width: 100%;
+}
+.link {
+  padding: 20px 0;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.719);
+  width: 100%;
+  color: #35412f;
+}
+.p {
+  margin: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.listContainer::-webkit-scrollbar {
+  width: 10px;
 }
 
 /* Track */
-.container::-webkit-scrollbar-track {
+/* .listContainer::-webkit-scrollbar-track {
   border: 1px solid rgb(172, 171, 171);
-}
+} */
 
 /* Handle */
-.container::-webkit-scrollbar-thumb {
+.listContainer::-webkit-scrollbar-thumb {
   background: #7c796f6e;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
-.container::-webkit-scrollbar-thumb:hover {
+.listContainer::-webkit-scrollbar-thumb:hover {
   background: #f8cd3e;
-}
-
-.link {
-  padding: 10px 0;
-  font-size: 20px;
-  border-bottom: 1px solid #444;
-  width: 100%;
-  color: #cca02f;
 }
