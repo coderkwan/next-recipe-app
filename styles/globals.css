@@ -1,10 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap");
+
 html,
 body {
+  max-width: 1400px;
   overflow-x: hidden;
-  padding: 0;
-  margin: 70px 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0 auto;
+  background-color: #fffff1;
+  padding: 70px 50px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 900px) {
+  html,
+  body {
+    margin: 50px 20px;
+  }
 }
 
 a {
@@ -17,4 +26,8 @@ a {
 }
 ul {
   list-style: none;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }

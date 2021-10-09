@@ -12,6 +12,7 @@ function Mypost({ result }) {
   const route = useRouter();
   const { id } = route.query;
   const cont = useRef();
+
   useEffect(() => {
     gsap.to(cont.current, 1, {
       opacity: 1,
