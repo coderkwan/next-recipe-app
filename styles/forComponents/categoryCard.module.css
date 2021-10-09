@@ -9,10 +9,14 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .imgDiv {
-  background-color: #222;
+  background-color: rgb(28, 29, 28);
+}
+.theImage {
   object-fit: cover;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;

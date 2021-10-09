@@ -12,9 +12,10 @@ function CartegoryCard({ Cartegory }) {
       <div>
         <div className={styles.imgDiv}>
           <Image
-            height={150}
+            className={styles.theImage}
             layout="responsive"
-            width={280}
+            height={140}
+            width={200}
             alt="category"
             src={Cartegory.strCategoryThumb}
           />

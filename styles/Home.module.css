@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 190px;
+  margin-bottom: 130px;
 }
 .leftContainer {
   margin: 20px 0;
@@ -19,7 +19,7 @@
 }
 .p {
   font-weight: 300;
-  width: 65%;
+  width: 90%;
 }
 
 .mealWrapper {
@@ -102,6 +102,9 @@
   }
   .h1 {
     font-size: 3.1rem;
+  }
+  .p {
+    width: 65%;
   }
 }
 @media screen and (min-width: 1229px) {
