@@ -1,11 +1,17 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Image from "next/dist/client/image";
 import styles from "../../../styles/Home.module.css";
 import foodImg from "../../../public/imgbin.png";
+import SearchArea from "../../../components/SearchArea";
 
 function Showcase() {
+  const [menu, setMenu] = useState(false);
+
+  const searchBtn = (e) => {};
+
   return (
     <div className={styles.container}>
+      {/* <SearchArea /> */}
       <div className={styles.leftContainer}>
         <h1 className={styles.h1}>
           Discover cool recipes. Cook the best meals
@@ -14,16 +20,7 @@ function Showcase() {
           Welcome to the beautiful collectionof world wide recipes. We value
           your meals
         </p>
-        <div className={styles.searchContainer}>
-          <input
-            className={styles.input}
-            placeholder="Discover our nice Recipes"
-            type="text"
-          />
-          <div className={styles.icon}>
-            <Image height={25} width={25} src="/icon.png" alt="search" />
-          </div>
-        </div>
+        <button className={styles.input}>Search by area</button>
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.mealWrapper}>

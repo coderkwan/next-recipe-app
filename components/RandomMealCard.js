@@ -3,13 +3,10 @@ import styles from "../styles/forComponents/randomCard.module.css";
 import Image from "next/dist/client/image";
 
 function RandomMealCard({ Meal }) {
-  var yourString = Meal.strInstructions; //replace with your string.
-  var maxLength = 120; // maximum number of characters to extract
-
-  //trim the string to the maximum length
+  var yourString = Meal.strInstructions;
+  var maxLength = 120;
   var trimmedString = yourString.substr(0, maxLength);
 
-  //re-trim if we are in the middle of a word
   trimmedString = trimmedString.substr(
     0,
     Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))
