@@ -1,8 +1,9 @@
 .table {
-  font-size: 20px;
+  font-size: 18px;
   border: 1px solid #787878;
   border-collapse: collapse;
-  max-width: 780px;
+  width: 100%;
+  max-width: 700px;
 }
 .table tbody {
   font-family: "Poppins", sans-serif;
@@ -11,6 +12,9 @@
 }
 .table tr {
   border: 1px solid #787878;
+}
+.table tr:nth-child(even) {
+  background-color: rgb(250, 240, 201);
 }
 .table td {
   width: 50%;
