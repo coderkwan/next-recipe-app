@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./nav.module.css";
 import Link from "next/link";
 import { useState } from "react";
@@ -25,11 +24,14 @@ function Nabar() {
   function toggle() {
     setmenu(!menu);
   }
+
   return (
     <div className={style.nav}>
-      <h3 className={style.home}>
-        Meals<span>O</span>ff
-      </h3>
+      <Link href="/">
+        <a className={style.home}>
+          Meals<span>O</span>ff
+        </a>
+      </Link>
       <div className={style.navContainer}>
         <h3 onClick={toggle} className={style.home}>
           Categories
@@ -39,7 +41,7 @@ function Nabar() {
             {cate.map((item, key) => {
               return (
                 <Link key={key} href={`/meals/${item}`}>
-                  <li onClick={toggle}>{item}</li>
+                  <a onClick={toggle}>{item}</a>
                 </Link>
               );
             })}

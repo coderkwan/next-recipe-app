@@ -3,11 +3,14 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 60px;
   background: transparent;
   border-bottom: 1px solid rgba(238, 202, 44, 0.445);
 }
 .home {
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -19,6 +22,8 @@
   position: relative;
 }
 .list {
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.705);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -29,18 +34,21 @@
   right: 0px;
   max-height: 80vh;
   overflow-y: scroll;
-  top: 49px;
+  top: 48px;
   z-index: 33;
-  border-left: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-left: 1px solid rgb(245, 187, 62);
+  border-bottom: 1px solid rgb(245, 187, 62);
 }
 
-.list li {
+.list a {
   width: 100%;
   font-size: 17px;
   padding: 20px 53px;
   border-bottom: 1px solid grey;
   transition: all 0.4s ease;
+}
+.list :last-child {
+  border: none;
 }
 
 .list::-webkit-scrollbar {
