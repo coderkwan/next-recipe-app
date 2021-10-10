@@ -51,10 +51,11 @@
   flex-direction: column;
   align-items: center;
 }
-.instructions ol {
+.instructions ul {
   text-align: left;
   font-family: "Poppins", sans-serif;
   padding: 0 30px;
+  list-style: square;
 }
 .instructions li {
   font-size: 20px;

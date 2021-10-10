@@ -44,13 +44,13 @@ function Details({ result }) {
       <div className={style.instructionsContainer}>
         <div className={style.instructions}>
           <h2>Instruction</h2>
-          <ol>
+          <ul>
             {myInstru.map((item, key) => {
               if (item.length > 3) {
                 return <li key={key}>{item}</li>;
               }
             })}
-          </ol>
+          </ul>
         </div>
       </div>
     </div>
