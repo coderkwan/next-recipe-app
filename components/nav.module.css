@@ -15,31 +15,25 @@
   color: rgb(223, 41, 41);
 }
 
-.home:hover {
-  transform: translateY(-5px);
-}
-.home:active {
-  color: rgb(27, 158, 105);
-}
 .navContainer {
   position: relative;
 }
 .list {
+  background: rgba(255, 255, 255, 0.507);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.925);
-  color: rgb(43, 43, 43);
+  color: rgb(0, 0, 0);
   padding: 20px;
   text-align: right;
-  right: -60px;
-  max-height: 77vh;
+  right: 0px;
+  max-height: 80vh;
   overflow-y: scroll;
   top: 49px;
   z-index: 33;
-  border-radius: 0 0 12px 12px;
 }
 
 .list li {
-  text-align: ri;
   width: 100%;
   font-size: 17px;
   padding: 20px 53px;
@@ -47,7 +41,22 @@
   transition: all 0.4s ease;
 }
 
-.list li:hover {
-  color: black;
-  transform: translateY(-2px);
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+/* .list::-webkit-scrollbar-track {
+  border: 1px solid rgb(172, 171, 171);
+} */
+
+/* Handle */
+.list::-webkit-scrollbar-thumb {
+  background: #7c796f6e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.list::-webkit-scrollbar-thumb:hover {
+  background: #f8cd3e;
 }

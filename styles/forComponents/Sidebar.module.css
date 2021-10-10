@@ -11,14 +11,17 @@
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  background-color: #fcfaf3;
+  /* background-color: #fcfaf3; */
   width: 90vw;
   max-width: 700px;
   border-radius: 18px;
   padding: 40px 30px;
   z-index: 33;
-  box-shadow: 0 0 83px 8px rgba(121, 121, 121, 0.397);
+  /* box-shadow: 0 0 83px 8px rgba(121, 121, 121, 0.397); */
   transition: all 0.8s ease-in;
+  background: rgba(255, 255, 255, 0.815);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .close {
@@ -43,7 +46,7 @@
   font-size: 17px;
   border-bottom: 1px solid rgba(68, 68, 68, 0.719);
   width: 100%;
-  color: #35412f;
+  color: #000000;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
