@@ -48,7 +48,7 @@ function Area({ result }) {
                   <h4 className={styles.description}>{item.strMeal}</h4>
                   <PrimaryBtn
                     text="View Recipe"
-                    link={`details/${item.strMeal}`}
+                    link={`/meals/details/${item.strMeal}`}
                   />
                 </div>
               </div>

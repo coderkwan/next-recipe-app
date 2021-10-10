@@ -1,4 +1,4 @@
-import style from "./nav.module.css";
+import style from "../styles/forComponents/nav.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { categories } from "../data/Category";

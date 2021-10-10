@@ -23,7 +23,10 @@ function CartegoryCard({ Cartegory }) {
         <h5 className={styles.h5}>{Cartegory.strCategory}</h5>
         <p className={styles.p}>{trimmed}</p>
       </div>
-      <PrimaryBtn link={Cartegory.strCategory} text="View Category" />
+      <PrimaryBtn
+        link={`/meals/${Cartegory.strCategory}`}
+        text="View Category"
+      />
     </div>
   );
 }

@@ -33,7 +33,14 @@ function Details({ result }) {
             Category: <span>{final.strCategory}</span>
           </p>
           <div className={style.btn}>
-            <PrimaryBtn text="Watch on Youtube" link="" />
+            <a
+              rel="noreferrer"
+              target="_blank"
+              className={style.link}
+              href={final.strYoutube}
+            >
+              Watch on Youtube
+            </a>
           </div>
         </div>
       </div>

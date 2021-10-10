@@ -4,7 +4,7 @@ import Link from "next/dist/client/link";
 function PrimaryBtn({ text, link }) {
   return (
     <>
-      <Link href={`/meals/${link}`}>
+      <Link href={link}>
         <a className={styles.btn}>{text}</a>
       </Link>
     </>
