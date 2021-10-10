@@ -3,7 +3,6 @@ import style from "../styles/forComponents/Sidebar.module.css";
 import Image from "next/dist/client/image";
 
 function SearchArea({ list, display, closeList }) {
-  const areas = list.meals;
   return (
     <div style={{ display: display }} className={style.container}>
       <div className={style.close}>
@@ -18,7 +17,7 @@ function SearchArea({ list, display, closeList }) {
         />
       </div>
       <div className={style.listContainer}>
-        {areas.map((item, key) => {
+        {list.map((item, key) => {
           return (
             <Link key={key} href="">
               <a className={style.link}>{item.strArea}</a>

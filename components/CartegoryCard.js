@@ -16,6 +16,7 @@ function CartegoryCard({ Cartegory }) {
             layout="responsive"
             height={140}
             width={200}
+            placeholder="blur"
             alt="category"
             src={Cartegory.strCategoryThumb}
           />

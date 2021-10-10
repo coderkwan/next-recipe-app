@@ -1,30 +1,15 @@
 import style from "./nav.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import { categories } from "../data/Category";
 
 function Nabar() {
-  const cate = [
-    "Beef",
-    "Chicken",
-    "Dessert",
-    "Lamb",
-    "Miscellaneous",
-    "Pasta",
-    "Pork",
-    "Seafood",
-    "Side",
-    "Starter",
-    "Vegan",
-    "Vegetarian",
-    "Breakfast",
-    "Goat",
-  ];
-  let menuName = "Categories";
-
   const [menu, setmenu] = useState(false);
   function toggle() {
     setmenu(!menu);
   }
+
+  let menuName = "Categories";
   if (menu) {
     menuName = "Close";
   } else {
@@ -44,10 +29,10 @@ function Nabar() {
         </h3>
         {menu && (
           <ul className={style.list}>
-            {cate.map((item, key) => {
+            {categories.map((item, key) => {
               return (
                 <Link key={key} href={`/meals/${item}`}>
-                  <a onClick={toggle}>{item}</a>
+                  <a onClick={toggle}>{item.strCategory}</a>
                 </Link>
               );
             })}
@@ -59,19 +44,3 @@ function Nabar() {
 }
 
 export default Nabar;
-const cate = [
-  "Beef",
-  "Chicken",
-  "Dessert",
-  "Lamb",
-  "Miscellaneous",
-  "Pasta",
-  "Pork",
-  "Seafood",
-  "Side",
-  "Starter",
-  "Vegan",
-  "Vegetarian",
-  "Breakfast",
-  "Goat",
-];

@@ -20,7 +20,6 @@
 }
 .imgContainer {
   border: 2px solid rgb(245, 172, 38);
-  box-shadow: 0 0 33px 2px rgba(153, 153, 136, 0.425);
   max-width: 460px;
   width: 100%;
   overflow: hidden;
