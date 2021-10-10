@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
 
 html,
 body {
@@ -10,7 +11,7 @@ body {
   margin: 0 auto;
   background-color: #fffff1;
   padding: 70px 50px;
-  font-family: "Righteous", cursive;
+  font-family: "Hammersmith One", sans-serif;
 }
 @media screen and (max-width: 900px) {
   html,
@@ -37,7 +38,7 @@ p {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #222;
 }

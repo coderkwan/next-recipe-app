@@ -32,8 +32,8 @@
   background-position: center;
   position: absolute;
   width: 100px;
-  right: -50px;
-  bottom: -80px;
+  right: -8px;
+  bottom: -30px;
   opacity: 0.2;
 }
 .mediumMeal {
@@ -41,11 +41,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 180px;
+  width: 140px;
   bottom: -40px;
   left: -160px;
   position: absolute;
   opacity: 0.3;
+  display: none;
 }
 .bigMeal {
   display: flex;
@@ -55,8 +56,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
 }
 
 .input {
@@ -105,6 +106,13 @@
   }
   .p {
     width: 65%;
+  }
+  .mediumMeal {
+    display: block;
+  }
+  .bigMeal {
+    width: 80%;
+    height: 80%;
   }
 }
 @media screen and (min-width: 1229px) {
