@@ -25,7 +25,10 @@ function RandomMealCard({ Meal }) {
       <h5 className={styles.h5}>{Meal.strMeal}</h5>
       <p className={styles.p}>{trimmedString}...</p>
       <div className={styles.btn}>
-        <PrimaryBtn link={`details/${Meal.strMeal}`} text="View Recipe" />
+        <PrimaryBtn
+          link={`/meals/details/${Meal.strMeal}`}
+          text="View Recipe"
+        />
       </div>
     </div>
   );

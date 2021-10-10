@@ -60,6 +60,21 @@
   font-size: 20px;
   margin: 25px 0;
 }
+.link {
+  background-color: #edae01;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #eee;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 33px;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.link:hover {
+  background-color: #f5c02f;
+}
 
 @media screen and (max-width: 750px) {
   .headerDescription {
