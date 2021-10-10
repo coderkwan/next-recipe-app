@@ -1,8 +1,9 @@
 .nav {
+  font-family: "Poppins", sans-serif;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   background: transparent;
   border-bottom: 1px solid rgba(238, 202, 44, 0.445);
 }
@@ -25,21 +26,23 @@
 }
 .list {
   position: absolute;
-  background-color: rgba(212, 236, 212, 0.925);
-  color: rgb(17, 68, 20);
-  padding: 0;
+  background-color: rgba(255, 255, 255, 0.925);
+  color: rgb(43, 43, 43);
+  padding: 20px;
+  text-align: right;
   right: -60px;
   max-height: 77vh;
   overflow-y: scroll;
-  top: 45px;
-  z-index: 333;
+  top: 49px;
+  z-index: 33;
+  border-radius: 0 0 12px 12px;
 }
 
 .list li {
-  text-align: center;
+  text-align: ri;
   width: 100%;
-  font-size: 1.4rem;
-  padding: 10px 53px;
+  font-size: 17px;
+  padding: 20px 53px;
   border-bottom: 1px solid grey;
   transition: all 0.4s ease;
 }
