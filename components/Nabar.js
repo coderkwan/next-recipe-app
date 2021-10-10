@@ -19,10 +19,16 @@ function Nabar() {
     "Breakfast",
     "Goat",
   ];
+  let menuName = "Categories";
 
   const [menu, setmenu] = useState(false);
   function toggle() {
     setmenu(!menu);
+  }
+  if (menu) {
+    menuName = "Close";
+  } else {
+    menuName = "Categories";
   }
 
   return (
@@ -34,7 +40,7 @@ function Nabar() {
       </Link>
       <div className={style.navContainer}>
         <h3 onClick={toggle} className={style.home}>
-          Categories
+          {menuName}
         </h3>
         {menu && (
           <ul className={style.list}>

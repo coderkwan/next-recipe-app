@@ -52,7 +52,7 @@
 }
 
 .list::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 /* Track */
