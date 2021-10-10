@@ -1,7 +1,6 @@
 import Image from "next/dist/client/image";
 import PrimaryBtn from "./PrimaryBtn";
 import styles from "../styles/forComponents/categoryCard.module.css";
-import Link from "next/dist/client/link";
 
 function CartegoryCard({ Cartegory }) {
   const mystring = Cartegory.strCategoryDescription;
