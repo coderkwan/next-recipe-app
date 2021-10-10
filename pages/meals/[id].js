@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/dist/client/image";
-import mstyle from "../../styles/Home.module.css";
+import styles from "../../styles/Recipes.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import PrimaryBtn from "../../components/PrimaryBtn";
 
 function Mypost({ result }) {
   const themeal = result.meals;
@@ -20,30 +21,30 @@ function Mypost({ result }) {
   }, [cont]);
   return (
     <div>
-      <div ref={cont} className={mstyle.container}>
-        <h2 className={mstyle.title}>{id} Recipes</h2>
-        <div className={mstyle.grid}>
+      <div ref={cont} className={styles.container}>
+        <h2 className={styles.title}>{id} Recipes</h2>
+        <div className={styles.grid}>
           {themeal.map((item, key) => {
             return (
-              <div key={key} className={mstyle.card}>
-                <Link href={`/meals/details/${item.strMeal}`}>
-                  <div>
-                    <Image
-                      src={item.strMealThumb}
-                      height={320}
-                      width={320}
-                      alt="thumbnail"
-                    />
-                    <p className={mstyle.description}>{item.strMeal}</p>
-                  </div>
-                </Link>
+              <div key={key} className={styles.card}>
+                <div>
+                  <Image
+                    className="image"
+                    src={item.strMealThumb}
+                    height={240}
+                    width={240}
+                    alt="thumbnail"
+                  />
+                  <h4 className={styles.description}>{item.strMeal}</h4>
+                  <PrimaryBtn
+                    text="View Recipe"
+                    link={`details/${item.strMeal}`}
+                  />
+                </div>
               </div>
             );
           })}
         </div>
-        <Link href="/">
-          <a className={mstyle.linker}>Home</a>
-        </Link>
       </div>
     </div>
   );

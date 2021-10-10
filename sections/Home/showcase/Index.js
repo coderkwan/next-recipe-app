@@ -6,8 +6,6 @@ import foodImg from "../../../public/imgbin.png";
 function Showcase({ clicked }) {
   const [menu, setMenu] = useState(false);
 
-  const searchBtn = (e) => {};
-
   return (
     <div className={styles.container}>
       <div className={styles.leftContainer}>
