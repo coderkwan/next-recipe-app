@@ -1,7 +1,7 @@
 import Image from "next/dist/client/image";
 import PrimaryBtn from "../../../components/PrimaryBtn";
+import Table from "../../../components/Table";
 import style from "../../../styles/Details.module.css";
-import { Fragment } from "react";
 
 function Details({ result }) {
   const final = result.meals[0];
@@ -38,7 +38,20 @@ function Details({ result }) {
         </div>
       </div>
       <div className={style.ingrediants}>
-        <h3>Ingrediants</h3>
+        <h2>Ingrediants</h2>
+        <Table data={final}></Table>
+      </div>
+      <div className={style.instructionsContainer}>
+        <div className={style.instructions}>
+          <h2>Instruction</h2>
+          <ol>
+            {myInstru.map((item, key) => {
+              if (item.length > 3) {
+                return <li key={key}>{item}</li>;
+              }
+            })}
+          </ol>
+        </div>
       </div>
     </div>
   );

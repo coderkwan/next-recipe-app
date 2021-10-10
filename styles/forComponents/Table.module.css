@@ -1,0 +1,19 @@
+.table {
+  font-size: 20px;
+  border: 1px solid #787878;
+  border-collapse: collapse;
+  max-width: 780px;
+}
+.table tbody {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  border: 1px solid #787878;
+}
+.table tr {
+  border: 1px solid #787878;
+}
+.table td {
+  width: 50%;
+  border: 1px solid #787878;
+  padding: 14px;
+}
