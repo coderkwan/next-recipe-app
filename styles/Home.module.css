@@ -32,6 +32,7 @@
   background-position: center;
   position: absolute;
   width: 100px;
+  height: 100px;
   right: -8px;
   bottom: -30px;
   opacity: 0.2;
@@ -42,6 +43,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 140px;
+  height: 140px;
   bottom: -40px;
   left: -160px;
   position: absolute;
@@ -63,6 +65,7 @@
 .input {
   font-size: 19px;
   padding: 10px 15px;
+  cursor: pointer;
   border-radius: 27px;
   border: 2px solid #edae01;
   width: 70%;
@@ -70,6 +73,13 @@
   margin-top: 20px;
   outline: 0;
   background: transparent;
+  transition: all 0.3s ease-out;
+}
+.input:hover {
+  border: 2px solid orangered;
+}
+.input:focus {
+  border: 2px solid #edae01;
 }
 
 .searchContainer {

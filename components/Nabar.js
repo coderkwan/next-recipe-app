@@ -27,9 +27,9 @@ function Nabar() {
   }
   return (
     <div className={style.nav}>
-      <Link href="/">
-        <h3 className={style.home}>Home</h3>
-      </Link>
+      <h3 className={style.home}>
+        Meals<span>O</span>ff
+      </h3>
       <div className={style.navContainer}>
         <h3 onClick={toggle} className={style.home}>
           Categories

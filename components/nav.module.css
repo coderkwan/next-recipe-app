@@ -1,18 +1,17 @@
 .nav {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  position: fixed;
-  top: 0;
-  z-index: 22;
+  justify-content: space-between;
   margin-bottom: 90px;
   background-color: rgb(255, 255, 255);
-  color: rgb(96, 172, 46);
-  box-shadow: 0 1px 22px 3px rgba(128, 128, 128, 0.137);
+  border-bottom: 1px solid rgba(238, 202, 44, 0.445);
 }
 .home {
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.home span {
+  color: rgb(223, 41, 41);
 }
 
 .home:hover {
@@ -33,6 +32,7 @@
   max-height: 77vh;
   overflow-y: scroll;
   top: 45px;
+  z-index: 333;
 }
 
 .list li {
