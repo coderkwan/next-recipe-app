@@ -31,7 +31,7 @@ function Nabar() {
           <ul className={style.list}>
             {categories.map((item, key) => {
               return (
-                <Link key={key} href={`/meals/${item}`}>
+                <Link key={key} href={`/meals/${item.strCategory}`}>
                   <a onClick={toggle}>{item.strCategory}</a>
                 </Link>
               );

@@ -12,9 +12,9 @@ function Mypost({ result }) {
       <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <linearGradient id="g">
-            <stop stop-color="#333" offset="20%" />
+            <stop stop-color="#7a6549" offset="20%" />
             <stop stop-color="#787351" offset="50%" />
-            <stop stop-color="#333" offset="70%" />
+            <stop stop-color="#665947" offset="70%" />
           </linearGradient>
         </defs>
         <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
