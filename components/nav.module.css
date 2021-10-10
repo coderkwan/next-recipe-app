@@ -19,9 +19,9 @@
   position: relative;
 }
 .list {
-  background: rgba(255, 255, 255, 0.507);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.705);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   position: absolute;
   color: rgb(0, 0, 0);
   padding: 20px;
@@ -31,6 +31,8 @@
   overflow-y: scroll;
   top: 49px;
   z-index: 33;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 
 .list li {

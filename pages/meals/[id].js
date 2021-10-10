@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/dist/client/image";
 import mstyle from "../../styles/Home.module.css";
 import Link from "next/link";
-import Navbar from "../../components/Nabar";
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -21,7 +20,6 @@ function Mypost({ result }) {
   }, [cont]);
   return (
     <div>
-      <Navbar />
       <div ref={cont} className={mstyle.container}>
         <h2 className={mstyle.title}>{id} Recipes</h2>
         <div className={mstyle.grid}>

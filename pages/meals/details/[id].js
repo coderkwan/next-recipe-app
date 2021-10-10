@@ -1,7 +1,6 @@
 import Image from "next/image";
 import style from "../../../styles/Details.module.css";
 import Link from "next/link";
-import Navbar from "../../../components/Nabar";
 import mstyle from "../../../styles/Home.module.css";
 import gsap from "gsap";
 import { useRef, useEffect } from "react";
@@ -21,7 +20,6 @@ function Details({ result }) {
   }, [cont]);
   return (
     <div>
-      <Navbar />
       <div ref={cont} className={style.container}>
         <p className={style.title}>{final.strMeal}</p>
         <Image src={final.strMealThumb} height={300} width={300} alt="food" />
