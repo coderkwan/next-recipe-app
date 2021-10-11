@@ -20,7 +20,7 @@
   margin: 40px;
 }
 .image {
-  border-radius: 12px;
+  border-radius: 6px;
   object-fit: cover;
 }
 .imgContainer {
@@ -64,7 +64,7 @@
   list-style: square;
 }
 .instructions li {
-  font-size: 20px;
+  font-size: 18px;
   margin: 25px 0;
 }
 .link {

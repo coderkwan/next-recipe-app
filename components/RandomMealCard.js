@@ -4,7 +4,7 @@ import Image from "next/dist/client/image";
 
 function RandomMealCard({ Meal, yourString }) {
   // var yourString = Meal.strInstructions;
-  var maxLength = 120;
+  var maxLength = 80;
   var trimmedString = yourString.substr(0, maxLength);
 
   trimmedString = trimmedString.substr(
