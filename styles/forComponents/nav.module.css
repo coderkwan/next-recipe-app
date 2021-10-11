@@ -10,9 +10,15 @@
   padding: 0 50px;
 }
 
+.links {
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 .home {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -88,6 +94,9 @@
     right: -10px;
   }
   .home {
-    font-size: 16px;
+    font-size: 17px;
+  }
+  .links {
+    font-size: 14px;
   }
 }

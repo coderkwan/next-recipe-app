@@ -53,12 +53,12 @@ function Nabar({ toggleArea }) {
           </a>
         </Link>
         <div className={style.navContainer}>
-          <h3 ref={areatext} onClick={openList} className={style.home}>
+          <h3 ref={areatext} onClick={openList} className={style.links}>
             Search by Area
           </h3>
         </div>
         <div className={style.navContainer}>
-          <h3 ref={categorytext} onClick={toggle} className={style.home}>
+          <h3 ref={categorytext} onClick={toggle} className={style.links}>
             Categories
           </h3>
           {menu && (
