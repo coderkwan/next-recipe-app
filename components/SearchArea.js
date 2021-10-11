@@ -1,10 +1,17 @@
+import { useRef } from "react";
 import Link from "next/dist/client/link";
 import style from "../styles/forComponents/Sidebar.module.css";
 import Image from "next/dist/client/image";
 
 function SearchArea({ list, display, closeList }) {
+  const listContainer = useRef();
+
   return (
-    <div style={{ display: display }} className={style.container}>
+    <div
+      ref={listContainer}
+      style={{ display: display }}
+      className={style.container}
+    >
       <div className={style.close}>
         <p className={style.p}>Select a Country</p>
         <Image
