@@ -1,15 +1,16 @@
 import styles from "../styles/forComponents/Footer.module.css";
-
+import Link from "next/dist/client/link";
 function Footer() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h4>
-          Meals<span>O</span>ff
-        </h4>
+        <Link href="/">
+          <a className={styles.home}>
+            Meals<span>O</span>ff
+          </a>
+        </Link>
         <div className={styles.links}>
-          <p>Categoties</p>
-          <p>Search by Area</p>
+          <p>Enjoy your Meals!</p>
         </div>
       </div>
     </div>

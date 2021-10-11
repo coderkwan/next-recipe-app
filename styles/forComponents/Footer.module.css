@@ -23,12 +23,12 @@
   font-size: 18px;
   color: rgb(25, 25, 26);
 }
-.container h4 {
+.home {
   color: rgb(231, 231, 229);
   font-size: 20px;
   font-weight: 500;
 }
-.container h4 span {
+.home span {
   color: #ed1101;
 }
 
