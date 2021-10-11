@@ -8,6 +8,8 @@
   background: transparent;
   border-bottom: 1px solid rgba(238, 202, 44, 0.445);
   padding: 0 50px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
 }
 
 .links {

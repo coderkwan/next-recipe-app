@@ -5,6 +5,7 @@ import Categories from "../sections/Home/Cartegories";
 import SearchArea from "../components/SearchArea";
 import { areas } from "../data/Category";
 import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function MainComponent({ random, random2, random3 }) {
   const mylist = [""];
@@ -30,7 +31,7 @@ export default function MainComponent({ random, random2, random3 }) {
   click ? (display = "flex") : (display = "none");
 
   return (
-    <div>
+    <div className={styles.overallContainer}>
       <Head>
         <link rel="icon" href="/fork.png" type="image/x-icon" />
         <title>All Recipes</title>
