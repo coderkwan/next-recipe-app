@@ -9,6 +9,7 @@
   padding: 12px 33px;
   transition: all 0.4s ease-out;
   cursor: pointer;
+  white-space: nowrap;
 }
 .btn:hover {
   background-color: #f5c02f;
