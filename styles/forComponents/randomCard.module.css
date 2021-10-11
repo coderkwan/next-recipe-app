@@ -46,6 +46,13 @@
 
 .mainContainer {
   text-align: left;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    padding: 0 10px;
+  }
 }
 
 .image {

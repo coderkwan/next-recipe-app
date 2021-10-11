@@ -48,3 +48,13 @@
     text-align: left;
   }
 }
+
+.mainContainer {
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    padding: 0 10px;
+  }
+}

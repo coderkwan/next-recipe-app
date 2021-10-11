@@ -17,27 +17,29 @@ function Nabar() {
   }
 
   return (
-    <div className={style.nav}>
-      <Link href="/">
-        <a className={style.home}>
-          Meals<span>O</span>ff
-        </a>
-      </Link>
-      <div className={style.navContainer}>
-        <h3 onClick={toggle} className={style.home}>
-          {menuName}
-        </h3>
-        {menu && (
-          <ul className={style.list}>
-            {categories.map((item, key) => {
-              return (
-                <Link key={key} href={`/meals/${item.strCategory}`}>
-                  <a onClick={toggle}>{item.strCategory}</a>
-                </Link>
-              );
-            })}
-          </ul>
-        )}
+    <div className={style.wrapper}>
+      <div className={style.nav}>
+        <Link href="/">
+          <a className={style.home}>
+            Meals<span>O</span>ff
+          </a>
+        </Link>
+        <div className={style.navContainer}>
+          <h3 onClick={toggle} className={style.home}>
+            {menuName}
+          </h3>
+          {menu && (
+            <ul className={style.list}>
+              {categories.map((item, key) => {
+                return (
+                  <Link key={key} href={`/meals/${item.strCategory}`}>
+                    <a onClick={toggle}>{item.strCategory}</a>
+                  </Link>
+                );
+              })}
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );

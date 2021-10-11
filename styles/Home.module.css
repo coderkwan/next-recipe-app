@@ -2,7 +2,14 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 130px;
+  padding: 0 50px;
 }
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .leftContainer {
   margin: 20px 0;
   order: 2;
