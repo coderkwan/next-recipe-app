@@ -4,6 +4,7 @@ import RandomMeal from "../sections/Home/randomMeals";
 import Categories from "../sections/Home/Cartegories";
 import SearchArea from "../components/SearchArea";
 import { areas } from "../data/Category";
+import Head from "next/head";
 
 export default function MainComponent({ random, random2, random3 }) {
   const mylist = [""];
@@ -30,6 +31,10 @@ export default function MainComponent({ random, random2, random3 }) {
 
   return (
     <div>
+      <Head>
+        <link rel="icon" href="/fork.png" type="image/x-icon" />
+        <title>All Recipes</title>
+      </Head>
       <Showcase clicked={handleClick} />
       <SearchArea closeList={closeList} display={display} list={areas} />
       <RandomMeal mylist={mylist} />
