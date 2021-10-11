@@ -23,7 +23,7 @@ function RandomMealCard({ Meal, yourString }) {
         />
       </div>
       <h5 className={styles.h5}>{Meal.strMeal}</h5>
-      <p className={styles.p}>{trimmedString}</p>
+      {/* <p className={styles.p}>{trimmedString}</p> */}
       <div className={styles.btn}>
         <PrimaryBtn
           link={`/meals/details/${Meal.strMeal}`}
