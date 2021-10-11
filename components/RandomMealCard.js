@@ -4,7 +4,7 @@ import Image from "next/dist/client/image";
 
 function RandomMealCard({ Meal, yourString }) {
   // var yourString = Meal.strInstructions;
-  var maxLength = 80;
+  var maxLength = 100;
   var trimmedString = yourString.substr(0, maxLength);
 
   trimmedString = trimmedString.substr(
@@ -23,7 +23,7 @@ function RandomMealCard({ Meal, yourString }) {
         />
       </div>
       <h5 className={styles.h5}>{Meal.strMeal}</h5>
-      {/* <p className={styles.p}>{trimmedString}</p> */}
+      <p className={styles.p}>{trimmedString}</p>
       <div className={styles.btn}>
         <PrimaryBtn
           link={`/meals/details/${Meal.strMeal}`}
