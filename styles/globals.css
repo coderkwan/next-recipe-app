@@ -7,13 +7,13 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   background-color: #fffff1;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   font-family: "Hammersmith One", sans-serif;
 }
 @media screen and (max-width: 900px) {
   html,
   body {
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 }
 
