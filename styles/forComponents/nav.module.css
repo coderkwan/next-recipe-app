@@ -88,7 +88,7 @@
 
 @media screen and (max-width: 900px) {
   .nav {
-    padding: 10px 10px 5px;
+    padding: 10px 20px 5px;
   }
   .list {
     right: -10px;

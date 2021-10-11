@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 900px) {
   .container {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 .header {
@@ -29,10 +29,11 @@
   width: 100%;
   overflow: hidden;
   border-radius: 6px;
+  box-shadow: 3px 3px 22px rgba(101, 109, 87, 0.363);
 }
 .para {
   font-size: 20px;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .btn {
