@@ -1,30 +1,11 @@
-import Image from "next/dist/client/image";
 import styles from "../../../styles/Recipes.module.css";
 import { useRouter } from "next/router";
-import PrimaryBtn from "../../../components/PrimaryBtn";
 import RandomMealCard from "../../../components/RandomMealCard";
 
 function Area({ result }) {
   const themeal = result.meals;
   const route = useRouter();
   const { id } = route.query;
-
-  const dataBlur = (w, h) => `
-      <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <linearGradient id="S">
-            <stop stop-color="#7a6549" offset="20%" />
-            <stop stop-color="#787351" offset="50%" />
-            <stop stop-color="#665947" offset="70%" />
-          </linearGradient>
-        </defs>
-        <rect id="r" width="${w}" height="${h}" fill="url(#S)" />
-      </svg>`;
-
-  const toBase64 = (str) =>
-    typeof window === "undefined"
-      ? Buffer.from(str).toString("base64")
-      : window.btoa(str);
 
   return (
     <div>
