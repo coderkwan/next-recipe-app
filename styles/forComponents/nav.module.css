@@ -1,6 +1,3 @@
-.wrapper {
-}
-
 .nav {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -26,6 +23,14 @@
 .navContainer {
   position: relative;
 }
+
+.menusContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  text-align: right;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -44,7 +49,6 @@
   border-left: 1px solid rgb(245, 187, 62);
   border-bottom: 1px solid rgb(245, 187, 62);
 }
-
 .list a {
   width: 100%;
   font-size: 17px;
@@ -82,5 +86,8 @@
   }
   .list {
     right: -10px;
+  }
+  .home {
+    font-size: 16px;
   }
 }
