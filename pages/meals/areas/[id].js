@@ -2,6 +2,7 @@ import Image from "next/dist/client/image";
 import styles from "../../../styles/Recipes.module.css";
 import { useRouter } from "next/router";
 import PrimaryBtn from "../../../components/PrimaryBtn";
+import RandomMealCard from "../../../components/RandomMealCard";
 
 function Area({ result }) {
   const themeal = result.meals;
@@ -31,28 +32,7 @@ function Area({ result }) {
         <h2 className={styles.title}>{id} Recipes</h2>
         <div className={styles.grid}>
           {themeal.map((item, key) => {
-            return (
-              <div key={key} className={styles.card}>
-                <div>
-                  <Image
-                    className="image"
-                    src={item.strMealThumb}
-                    placeholder="blur"
-                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                      dataBlur(240, 240)
-                    )}`}
-                    height={240}
-                    width={240}
-                    alt="thumbnail"
-                  />
-                  <h4 className={styles.description}>{item.strMeal}</h4>
-                  <PrimaryBtn
-                    text="View Recipe"
-                    link={`/meals/details/${item.strMeal}`}
-                  />
-                </div>
-              </div>
-            );
+            return <RandomMealCard yourString="" Meal={item} key={key} />;
           })}
         </div>
       </div>

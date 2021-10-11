@@ -2,8 +2,8 @@ import PrimaryBtn from "./PrimaryBtn";
 import styles from "../styles/forComponents/randomCard.module.css";
 import Image from "next/dist/client/image";
 
-function RandomMealCard({ Meal }) {
-  var yourString = Meal.strInstructions;
+function RandomMealCard({ Meal, yourString }) {
+  // var yourString = Meal.strInstructions;
   var maxLength = 120;
   var trimmedString = yourString.substr(0, maxLength);
 
@@ -23,7 +23,7 @@ function RandomMealCard({ Meal }) {
         />
       </div>
       <h5 className={styles.h5}>{Meal.strMeal}</h5>
-      <p className={styles.p}>{trimmedString}...</p>
+      <p className={styles.p}>{trimmedString}</p>
       <div className={styles.btn}>
         <PrimaryBtn
           link={`/meals/details/${Meal.strMeal}`}

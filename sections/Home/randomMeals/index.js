@@ -7,7 +7,13 @@ function RandomMeal({ mylist }) {
       <h2>Today’s 3 Random Meals</h2>
       <div className={styles.wrapper}>
         {mylist.map((item, key) => {
-          return <RandomMealCard Meal={item} key={key} />;
+          return (
+            <RandomMealCard
+              yourString={item.strInstructions}
+              Meal={item}
+              key={key}
+            />
+          );
         })}
       </div>
     </div>
