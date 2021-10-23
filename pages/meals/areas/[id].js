@@ -1,6 +1,7 @@
 import styles from "../../../styles/Recipes.module.css";
 import { useRouter } from "next/router";
 import RandomMealCard from "../../../components/RandomMealCard";
+import Head from "next/dist/shared/lib/head";
 
 function Area({ result }) {
   const themeal = result.meals;
@@ -9,6 +10,13 @@ function Area({ result }) {
 
   return (
     <div>
+      <Head>
+        <title>{`${id} recipes`}</title>
+        <meta
+          name="description"
+          content={`This is a list of all ${id} recipes`}
+        />
+      </Head>
       <div className={styles.container}>
         <h2 className={styles.title}>{id} Recipes</h2>
         <div className={styles.grid}>
