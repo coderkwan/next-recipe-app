@@ -1,7 +1,7 @@
 import Image from "next/dist/client/image";
-import PrimaryBtn from "../../../components/PrimaryBtn";
 import Table from "../../../components/Table";
 import style from "../../../styles/Details.module.css";
+import Head from "next/head";
 
 function Details({ result }) {
   const final = result.meals[0];
@@ -13,6 +13,13 @@ function Details({ result }) {
 
   return (
     <div className={style.container}>
+      <Head>
+        <title>{final.strMeal}</title>
+        <meta
+          name="description"
+          content={`Ingredients and instructions to follow when preparing ${final.strMeal}`}
+        />
+      </Head>
       <h2>{final.strMeal}</h2>
       <div className={style.header}>
         <div className={style.imgContainer}>
@@ -45,7 +52,7 @@ function Details({ result }) {
         </div>
       </div>
       <div className={style.ingrediants}>
-        <h2>Ingrediants</h2>
+        <h2>Ingredients</h2>
         <Table data={final}></Table>
       </div>
       <div className={style.instructionsContainer}>

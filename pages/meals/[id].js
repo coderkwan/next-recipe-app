@@ -1,8 +1,8 @@
 import Image from "next/dist/client/image";
 import styles from "../../styles/Recipes.module.css";
 import { useRouter } from "next/router";
-import PrimaryBtn from "../../components/PrimaryBtn";
 import RandomMealCard from "../../components/RandomMealCard";
+import Head from "next/dist/shared/lib/head";
 
 function Mypost({ result }) {
   const themeal = result.meals;
@@ -11,6 +11,13 @@ function Mypost({ result }) {
 
   return (
     <div>
+      <Head>
+        <title>{`${id} recipes`}</title>
+        <meta
+          name="description"
+          content={`This is a list of all ${id} recipes`}
+        />
+      </Head>
       <div className={styles.container}>
         <h2 className={styles.title}>{id} Recipes</h2>
         <div className={styles.grid}>

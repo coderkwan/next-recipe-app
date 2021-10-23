@@ -33,8 +33,12 @@ export default function MainComponent({ random, random2, random3 }) {
   return (
     <div className={styles.overallContainer}>
       <Head>
-        <link rel="icon" href="/fork.png" type="image/x-icon" />
-        <title>All Recipes</title>
+        <meta
+          name="description"
+          content="This website displays a list of all free recipes. 
+          The recipes are displayed and filtered or sorted by Area and Category."
+        />
+        <title>Free Recipes</title>
       </Head>
       <Showcase clicked={handleClick} />
       <SearchArea closeList={closeList} display={display} list={areas} />
