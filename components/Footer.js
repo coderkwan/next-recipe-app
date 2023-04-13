@@ -5,9 +5,9 @@ function Footer() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Link href="/">
-          <a className={styles.home}>
+          <p className={styles.home}>
             Meals<span>O</span>ff
-          </a>
+          </p>
         </Link>
         <div className={styles.links}>
           <p>Enjoy your Meals!</p>

@@ -48,9 +48,9 @@ function Nabar({ toggleArea }) {
       <SearchArea closeList={closeList} display={display} list={areas} />
       <div className={style.nav}>
         <Link href="/">
-          <a className={style.home}>
+          <p className={style.home}>
             Meals<span>O</span>ff
-          </a>
+          </p>
         </Link>
         <div className={style.navContainer}>
           <h3 ref={areatext} onClick={openList} className={style.links}>
@@ -66,7 +66,7 @@ function Nabar({ toggleArea }) {
               {categories.map((item, key) => {
                 return (
                   <Link key={key} href={`/meals/${item.strCategory}`}>
-                    <a onClick={toggle}>{item.strCategory}</a>
+                    <p onClick={toggle}>{item.strCategory}</p>
                   </Link>
                 );
               })}

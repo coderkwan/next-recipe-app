@@ -5,7 +5,7 @@ function PrimaryBtn({ text, link }) {
   return (
     <>
       <Link href={link}>
-        <a className={styles.btn}>{text}</a>
+        <p className={styles.btn}>{text}</p>
       </Link>
     </>
   );

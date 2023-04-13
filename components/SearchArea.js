@@ -27,7 +27,7 @@ function SearchArea({ list, display, closeList }) {
         {list.map((item, key) => {
           return (
             <Link key={key} href={`/meals/areas/${item.strArea}`}>
-              <a className={style.link}>{item.strArea}</a>
+              <p className={style.link}>{item.strArea}</p>
             </Link>
           );
         })}

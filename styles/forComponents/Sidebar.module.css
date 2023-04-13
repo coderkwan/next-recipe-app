@@ -43,8 +43,9 @@
   width: 100%;
 }
 .link {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 17px;
+  margin: 0;
   border-bottom: 1px solid rgba(68, 68, 68, 0.719);
   width: 100%;
   color: #000000;
