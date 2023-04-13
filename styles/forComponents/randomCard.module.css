@@ -17,12 +17,15 @@
   color: rgba(255, 255, 255, 0.952);
   position: relative;
   overflow: hidden;
+
 }
 
 .p {
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
   z-index: 3;
+}
+.h2 {
 }
 
 .h5 {
@@ -49,7 +52,7 @@
 
 .mainContainer {
   text-align: left;
-  padding: 0 50px;
+  padding: 30px 50px;
 }
 
 @media screen and (max-width: 900px) {
